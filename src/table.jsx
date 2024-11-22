@@ -220,8 +220,8 @@ function Table(){
                     <th>Price</th>
                     <th>Description</th>
                     <th>Category</th>
+                    <th>Rating</th>
                     <th>Image</th>
-                    <th>Rating</th>{' '}
                 </tr>
         
             {products.map((a,b)=>{
@@ -232,7 +232,7 @@ function Table(){
                         <td>{a.price}</td>
                         <td>{a.description}</td>
                         <td>{a.category}</td>
-                        <td>{a.image}</td>
+                        {/* <td>{a.image}</td> */}
                         <td>{a.rating.rate}</td>
                         <td><img src={a.image} alt="" style={{height:'100px'}} /></td>
                     </tr>
